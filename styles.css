@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d5f5e3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 400px;
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.friend-page h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.friend-image {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.friend-image:hover {
+    transform: scale(1.1);
+}
+
+.friend-nickname {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.friend-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+.friend-list li {
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    transition: background 0.3s;
+}
+.friend-list li:first-child {
+    border-top: none;
+}
+.friend-list li:hover {
+    background: #ecf0f1;
+}
+
+@media (max-width: 600px) {
+    .friend-page h1 {
+        font-size: 20px;
+    }
+    .friend-image {
+        width: 80%;
+    }
+    .friend-nickname {
+        font-size: 16px;
+    }
+    .friend-list li {
+        font-size: 14px;
+    }
+}
